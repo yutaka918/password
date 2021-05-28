@@ -1,0 +1,19 @@
+.title {
+    text-align: center;
+    color: brown;
+
+}
+.sub-title {
+    text-align: center;
+}
+.text {
+    text-align: center;
+}
+.letter {
+    text-align: center;
+    padding: 8px;
+    color: coral;
+}
+.result {
+    text-align: center;
+}

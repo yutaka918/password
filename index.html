@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワード自動作成サイト</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">パスワード自動作成サイト</h1>
+        <p class="sub-title">こちらでは字数や条件を自由に決めて、安全性の高いパスワードを自動で生成できます。</p>
+    </header>
+    <form>
+        <h2 class="text">以下の条件をお選びください</h2>
+        <p class="letter">
+        <input type="checkbox" id="rule_lowercase" checked>小文字 <br> <br>
+        <input type="checkbox" id="rule_uppercase" checked>大文字 <br> <br>
+        <input type="checkbox" id="rule_numeric" checked>数字 <br> <br>
+        <input type="checkbox" id="rule_symbol" checked>記号 <br> ('!"#$%&()=~|@[];:+-*>?_.,\'') <br> <br> <br>
+        長さ<input type="number" id="rule_length">
+        </p>
+        <p class="result">
+            <input type="button" onclick="setPassword('passwd');" value="パスワード生成"> <br>
+            <input type="text" id="passwd">
+        </p>
+    </form>
+<script type="text/javascript" src="random.js"></script>
+
+</body>
+</html>
